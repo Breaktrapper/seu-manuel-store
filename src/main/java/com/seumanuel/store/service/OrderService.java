@@ -1,8 +1,6 @@
 package com.seumanuel.store.service;
 
 import  com.seumanuel.store.model.Order;
-
-import com.seumanuel.store.model.OrderProduct;
 import com.seumanuel.store.model.OrderStatus;
 import com.seumanuel.store.repository.OrderRepository;
 import org.springframework.stereotype.Service;
@@ -37,8 +35,11 @@ public class OrderService {
         return orderRepository.save(order);
     }
 
-   // public Order cancelOrder (Order order){
-    //order.setStatus(new.OrderStatus);
-    //}
+    public Order cancelOrder (Order order) throws IllegalAccessException {
+        if (!OrderStatus.NEW.equals(order.getStatus())){
+            throw new IllegalAccessException("You cant cancel the order!");
+        }
+        return  orderRepository.save(order);
+    }
 
 }
