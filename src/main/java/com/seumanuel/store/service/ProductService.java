@@ -1,4 +1,4 @@
-package service;
+package com.seumanuel.store.service;
 
 
 import com.seumanuel.store.model.Product;
