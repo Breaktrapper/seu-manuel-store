@@ -1,1 +1,6 @@
-
+spring:
+  data:
+    mongodb:
+      database: seu-manuel
+      port: 27016
+      host: localhost
