@@ -2,7 +2,7 @@ package com.seumanuel.store.controller;
 
 import com.seumanuel.store.model.Product;
 import org.springframework.web.bind.annotation.*;
-import service.ProductService;
+import com.seumanuel.store.service.ProductService;
 
 import java.math.BigDecimal;
 import java.util.List;

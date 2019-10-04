@@ -2,5 +2,5 @@ spring:
   data:
     mongodb:
       database: seu-manuel
-      port: 27016
+      port: 27017
       host: localhost
